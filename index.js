@@ -7,6 +7,7 @@ var port = '3000';
 app.post('/', async (req, res) => {
 
   console.log('Метод отрабатывает. Body:\n' + req.body);
+  return res.status(200).send('Все кайф!');
   
   
   if (!req.body) return res.sendStatus(400);
