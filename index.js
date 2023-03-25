@@ -2,6 +2,8 @@ const express = require('express');
 const request = require('request');
 const app = express();
 
+app.use(express.json());
+
 var port = '3000';
 
 app.post('/', async (req, res) => {
