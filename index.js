@@ -10,26 +10,26 @@ app.post('/', async (req, res) => {
   return res.status(200).send('Все кайф!');
   
   
-  if (!req.body) return res.sendStatus(400);
+//   if (!req.body) return res.sendStatus(400);
 
-  let data = req.body;
+//   let data = req.body;
 
-  if (data.isExtend != null) {
+//   if (data.isExtend != null) {
 
-  } else {
-    await request.post('https://api.monobank.ua/api/merchant/invoice/create',
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Token': 'ujaMDwOnUtpOK-ViXhqBCczdbua3pAkawIch6tgheZ4U'
-        },
-        body: JSON.stringify(data)
-      },
-      (error, response, body) => {
-        console.log(body);
-      }
-    );
-  }
+//   } else {
+//     await request.post('https://api.monobank.ua/api/merchant/invoice/create',
+//       {
+//         headers: {
+//           'Content-Type': 'application/json',
+//           'X-Token': 'ujaMDwOnUtpOK-ViXhqBCczdbua3pAkawIch6tgheZ4U'
+//         },
+//         body: JSON.stringify(data)
+//       },
+//       (error, response, body) => {
+//         console.log(body);
+//       }
+//     );
+//   }
 });
 
 
