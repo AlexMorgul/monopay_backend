@@ -4,7 +4,7 @@ const app = express();
 
 var port = '3000';
 
-app.get('/', async (req, res) => {
+app.post('/', async (req, res) => {
 
   console.log('Метод отрабатывает. Body:\n' + req.body);
   
