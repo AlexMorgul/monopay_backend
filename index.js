@@ -6,6 +6,9 @@ var port = '3000';
 
 app.get('/', async (req, res) => {
 
+  console.log('Метод отрабатывает. Body:\n' + req.body);
+  
+  
   if (!req.body) return res.sendStatus(400);
 
   let data = req.body;
